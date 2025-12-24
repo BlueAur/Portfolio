@@ -1,0 +1,128 @@
+#layout {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    text-wrap: wrap;
+    grid-template-rows: 1fr 94% 1fr;
+    grid-template-columns: 13% 76% 13%;
+    grid-template-areas: 
+    ". top ."
+    ". content ."
+    ". bottom .";
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  
+  .montserrat {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  body{
+    background-color: #0b0c10;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  header{
+    grid-area: top;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "name ."
+    "title buttons";
+    justify-content: center;
+    border-bottom: 2px solid #45A29E;
+    font-size: 2.5em;
+    color: #cccccc;
+  }
+
+  header > #buttons{
+    justify-self: right;
+    grid-area: buttons;
+  }
+
+  header > #name {
+    grid-area: name;
+  }
+
+  header > #title {
+    grid-area: title;
+  }
+
+
+   main{
+    padding: 20px;
+    grid-area: content;
+    color: #cccccc;
+    background-color: #1f2833;
+    
+  }
+  footer{
+    grid-area: bottom;
+    font-size: 1em;
+    background-color: #0B0C10;
+    
+    padding: 20px;
+    text-align: center;
+    color: #cccccc;
+  }
+
+  h1{
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+  }
+
+  h2{
+    margin: 0;
+    font-size: .70em;
+    padding: 0;
+  }
+
+  h3{
+    margin-top: 0;
+    margin-bottom: 0;
+    white-space: initial;
+  }
+
+  hr{
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+
+  }
+
+  p{
+    white-space: initial;
+  }
+
+  a:link{
+    color: #02C3BD;
+  }
+
+  a:visited{
+    color: #45A29E;
+  }
+
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    aspect-ratio: initial;
+  max-width:31vw;
+  max-height:18vw;
+  width: auto;
+  height: auto;
+  }
+
+  #rot{
+    transform: rotate(270deg);
+  }
+ 
+
+  /*https://coolors.co/343330-2176ff-d3bcc0-02c3bd-223659*/
